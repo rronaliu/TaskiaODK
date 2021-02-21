@@ -1,0 +1,93 @@
+* {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  transition: 1s;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  transform: translatey(20px);
+}
+
+body {
+  background-image: url("images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Mulish", sans-serif;
+}
+
+.h-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900 !important;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.btn {
+  font-size: 0.8rem !important;
+}
+
+.card-1 {
+  transform: translateY(-40px);
+}
+
+.card-2 {
+  transform: translateY(50px);
+}
+
+.card-3 {
+  transform: translateY(-20px);
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 426px) {
+  .hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .hidden-avatars {
+    display: none;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card-3,
+  .card-2,
+  .card-1 {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .hundered {
+    font-size: 6rem;
+  }
+}
